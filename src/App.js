@@ -1,25 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import { LandingContent, LandingHeader, LandingFooter, SignupForm} from './ui-components';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Authentication from "./Authentication";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+return (
+  <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<LandingHeader />}></Route>
+        </Routes>
+        <div className='Content'>
+          <Routes>
+            <Route path="/" element={<LandingContent />}></Route>
+            <Route path="/auth" element={<Authentication />}></Route>
+            <Route path="/signup" element={<SignupForm />}></Route>
+          </Routes>
+        </div>
+        <Routes>
+          <Route path="/" element={<LandingFooter />}></Route>
+        </Routes>
+      </div>
+  </Router>
+);
 }
 
 export default App;
