@@ -5,8 +5,8 @@
  **************************************************************************/
 
 import React from "react";
-import { UserInfo } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
+import { UserInfo } from "../models";
 import { FlexProps } from "@aws-amplify/ui-react";
 export declare type UserHeaderProps = React.PropsWithChildren<Partial<FlexProps> & {
     userInfo?: UserInfo;

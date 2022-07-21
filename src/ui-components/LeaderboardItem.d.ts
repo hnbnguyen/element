@@ -5,8 +5,8 @@
  **************************************************************************/
 
 import React from "react";
-import { TeamUpdate } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
+import { TeamUpdate } from "../models";
 import { FlexProps } from "@aws-amplify/ui-react";
 export declare type LeaderboardItemProps = React.PropsWithChildren<Partial<FlexProps> & {
     teamUpdate?: TeamUpdate;

@@ -6,11 +6,8 @@
 
 import React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { LandingPagePicture } from "../models";
 import { FlexProps } from "@aws-amplify/ui-react";
 export declare type LandingContentProps = React.PropsWithChildren<Partial<FlexProps> & {
-    landingPagePicture?: LandingPagePicture;
-} & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
 export default function LandingContent(props: LandingContentProps): React.ReactElement;

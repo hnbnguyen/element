@@ -5,12 +5,12 @@
  **************************************************************************/
 
 import React from "react";
-import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { TeamUpdate } from "../models";
+import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { ViewProps } from "@aws-amplify/ui-react";
-export declare type DashboardItemProps = React.PropsWithChildren<Partial<ViewProps> & {
+export declare type DashboardDateTimeProps = React.PropsWithChildren<Partial<ViewProps> & {
     teamUpdate?: TeamUpdate;
 } & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
-export default function DashboardItem(props: DashboardItemProps): React.ReactElement;
+export default function DashboardDateTime(props: DashboardDateTimeProps): React.ReactElement;

@@ -6,11 +6,8 @@
 
 import React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { SignupPagePicture } from "../models";
 import { FlexProps } from "@aws-amplify/ui-react";
 export declare type SignupFormProps = React.PropsWithChildren<Partial<FlexProps> & {
-    signupPagePicture?: SignupPagePicture;
-} & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
 export default function SignupForm(props: SignupFormProps): React.ReactElement;

@@ -6,25 +6,10 @@
 
 /* eslint-disable */
 import React from "react";
-import {
-  getOverrideProps,
-  useAuth,
-  useDataStoreCreateAction,
-} from "@aws-amplify/ui-react/internal";
-import { UserInfo } from "../models";
-import { schema } from "../models/schema";
+import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Image, Text, View } from "@aws-amplify/ui-react";
 export default function SignupForm(props) {
-  const { signupPagePicture, overrides, ...rest } = props;
-  const authAttributes = useAuth().user?.attributes ?? {};
-  const groupOneOnClick = useDataStoreCreateAction({
-    fields: {
-      email: authAttributes["email"],
-      username: authAttributes["preferred_username"],
-    },
-    model: UserInfo,
-    schema: schema,
-  });
+  const { overrides, ...rest } = props;
   return (
     <Flex
       gap="50px"
@@ -129,7 +114,6 @@ export default function SignupForm(props) {
             left="26px"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            textTransform=""
             children="Enter your username..."
             {...getOverrideProps(overrides, "Enter your username...")}
           ></Text>
@@ -316,9 +300,6 @@ export default function SignupForm(props) {
           height="58px"
           shrink="0"
           position="relative"
-          onClick={() => {
-            groupOneOnClick();
-          }}
           {...getOverrideProps(overrides, "Group 1")}
         >
           <View
@@ -361,7 +342,6 @@ export default function SignupForm(props) {
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
-        src="https://rachelsirishadventures.com/wp-content/uploads/2020/08/ECCH_S1_02040_SPStatic_SurvivingFijiRivers_SocialSquare_1080x1080_Final_VM-768x768.jpg"
         {...getOverrideProps(overrides, "image 38")}
       ></Image>
     </Flex>

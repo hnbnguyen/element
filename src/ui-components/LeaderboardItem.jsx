@@ -6,10 +6,17 @@
 
 /* eslint-disable */
 import React from "react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import {
+  getOverrideProps,
+  useStateMutationAction,
+} from "@aws-amplify/ui-react/internal";
 import { Flex, Text } from "@aws-amplify/ui-react";
 export default function LeaderboardItem(props) {
   const { teamUpdate, overrides, ...rest } = props;
+  const [rankColor, setRankColor] = useStateMutationAction("rgba(0,0,0,1)");
+  const leaderboardItemOnClick = () => {
+    setRankColor("red");
+  };
   return (
     <Flex
       gap="10px"
@@ -20,6 +27,9 @@ export default function LeaderboardItem(props) {
       position="relative"
       padding="23px 10px 23px 10px"
       backgroundColor="rgba(255,255,255,1)"
+      onClick={() => {
+        leaderboardItemOnClick();
+      }}
       {...rest}
       {...getOverrideProps(overrides, "LeaderboardItem")}
     >
@@ -38,7 +48,7 @@ export default function LeaderboardItem(props) {
           fontFamily="Inter"
           fontSize="20px"
           fontWeight="400"
-          color="rgba(0,0,0,1)"
+          color={rankColor}
           lineHeight="24px"
           textAlign="left"
           display="flex"

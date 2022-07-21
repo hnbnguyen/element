@@ -11,5 +11,5 @@ export { default as LandingHeader } from "./LandingHeader";
 export { default as DashboardHeader } from "./DashboardHeader";
 export { default as LandingFooter } from "./LandingFooter";
 export { default as LeaderboardItem } from "./LeaderboardItem";
-export { default as SignupForm } from "./SignupForm";
 export { default as UserHeader } from "./UserHeader";
+export { default as SignupForm } from "./SignupForm";

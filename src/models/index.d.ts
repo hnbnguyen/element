@@ -55,6 +55,9 @@ export declare class TeamUpdate {
   readonly teamSpeed?: number | null;
   readonly country?: string | null;
   readonly weatherCondition?: string | null;
+  readonly date?: string | null;
+  readonly time?: string | null;
+  readonly favourite?: boolean | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
   constructor(init: ModelInit<TeamUpdate, TeamUpdateMetaData>);

@@ -12,7 +12,7 @@ import {
 } from "@aws-amplify/ui-react/internal";
 import { Flex, Image, Text, View } from "@aws-amplify/ui-react";
 export default function LandingContent(props) {
-  const { landingPagePicture, overrides, ...rest } = props;
+  const { overrides, ...rest } = props;
   const groupTwoOnClick = useNavigateAction({ type: "url", url: "/auth" });
   return (
     <Flex

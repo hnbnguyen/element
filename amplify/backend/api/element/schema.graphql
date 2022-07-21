@@ -21,4 +21,8 @@ type TeamUpdate @model @auth(rules: [{allow: public}]) {
   teamSpeed: Float
   country: String
   weatherCondition: String
-} 
+  date: String
+  time: String
+  favourite: Boolean
+}
+ 

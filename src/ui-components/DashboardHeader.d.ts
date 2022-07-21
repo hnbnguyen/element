@@ -5,9 +5,12 @@
  **************************************************************************/
 
 import React from "react";
+import { TeamUpdate } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { ViewProps } from "@aws-amplify/ui-react";
 export declare type DashboardHeaderProps = React.PropsWithChildren<Partial<ViewProps> & {
+    teamUpdate?: TeamUpdate;
+} & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
 export default function DashboardHeader(props: DashboardHeaderProps): React.ReactElement;
