@@ -36,7 +36,7 @@ export default function LandingContent(props) {
         {...getOverrideProps(overrides, "Frame 325")}
       >
         <Text
-          fontFamily="Georgia"
+          fontFamily="Inter"
           fontSize="100px"
           fontWeight="400"
           color="rgba(0,0,0,1)"
@@ -45,7 +45,7 @@ export default function LandingContent(props) {
           display="flex"
           direction="column"
           justifyContent="flex-start"
-          width="1183px"
+          width="1251px"
           shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"

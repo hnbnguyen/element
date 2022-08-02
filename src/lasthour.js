@@ -1,19 +1,19 @@
-import {DashboardItemCollection, UserHeader, LandingFooter, DashboardHeader} from './ui-components';
+import {DashboardItemCollection, UserHeader, LandingFooter, DashboardHeader, DashboardItemCollectionLastHour, DashboardHeaderLastHour} from './ui-components';
 import { withAuthenticator } from "@aws-amplify/ui-react";
 import '@aws-amplify/ui-react/styles.css';
 import "maplibre-gl/dist/maplibre-gl.css";
 import BasicMap from './raceMap';
 
-function Authentication(){
+function Lasthour(){
     return(
         <div>
             <UserHeader />
-            <DashboardHeader />
-            <DashboardItemCollection />
+            <DashboardHeaderLastHour />
+            <DashboardItemCollectionLastHour />
             <BasicMap />
             <LandingFooter />
         </div>
     );
 }
 
-export default withAuthenticator(Authentication);
+export default withAuthenticator(Lasthour);

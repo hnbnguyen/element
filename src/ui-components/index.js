@@ -5,6 +5,7 @@
  **************************************************************************/
 
 export { default as DashboardItemCollection } from "./DashboardItemCollection";
+export { default as Visualizer } from "./Visualizer";
 export { default as LandingContent } from "./LandingContent";
 export { default as DashboardItem } from "./DashboardItem";
 export { default as LandingHeader } from "./LandingHeader";
@@ -13,3 +14,6 @@ export { default as LandingFooter } from "./LandingFooter";
 export { default as LeaderboardItem } from "./LeaderboardItem";
 export { default as UserHeader } from "./UserHeader";
 export { default as SignupForm } from "./SignupForm";
+export { default as VisualizerLastHour } from "./VisualizerLastHour";
+export { default as DashboardHeaderLastHour } from "./DashboardHeaderLastHour";
+export { default as DashboardItemCollectionLastHour } from "./DashboardItemCollectionLastHour";

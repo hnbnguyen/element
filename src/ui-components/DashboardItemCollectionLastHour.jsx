@@ -15,9 +15,9 @@ import { SortDirection } from "@aws-amplify/datastore";
 import { TeamUpdate } from "../models";
 import DashboardItem from "./DashboardItem";
 import { Collection } from "@aws-amplify/ui-react";
-export default function DashboardItemCollection(props) {
+export default function DashboardItemCollectionLastHour(props) {
   const { items: itemsProp, overrideItems, overrides, ...rest } = props;
-  const itemsFilterObj = { field: "time", operand: "10:00", operator: "eq" };
+  const itemsFilterObj = { field: "time", operand: "11:00", operator: "eq" };
   const itemsFilter = createDataStorePredicate(itemsFilterObj);
   const itemsPagination = { sort: (s) => s.rank(SortDirection.ASCENDING) };
   const itemsDataStore = useDataStoreBinding({
@@ -30,13 +30,11 @@ export default function DashboardItemCollection(props) {
   return (
     <Collection
       type="list"
-      searchPlaceholder="Search..."
       direction="column"
-      alignItems="stretch"
-      justifyContent="left"
+      justifyContent="stretch"
       items={items || []}
       {...rest}
-      {...getOverrideProps(overrides, "DashboardItemCollection")}
+      {...getOverrideProps(overrides, "DashboardItemCollectionLastHour")}
     >
       {(item, index) => (
         <DashboardItem

@@ -16,15 +16,12 @@ export default function DashboardItem(props) {
   const [highlightBackgroundColor, setHighlightBackgroundColor] =
     useStateMutationAction("rgba(255,255,255,1)");
   const rectangleSevenFourFourOnClick = () => {
-    setHighlightBackgroundColor("#DDE6EE");
-  };
-  const followOnClick = () => {
-    setHighlightBackgroundColor("white");
+    setHighlightBackgroundColor("#FEF02F");
   };
   return (
     <View
       width="1440px"
-      height="100px"
+      height="103px"
       overflow="hidden"
       position="relative"
       padding="0px 0px 0px 0px"
@@ -69,19 +66,20 @@ export default function DashboardItem(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children={teamUpdate?.rank}
-          {...getOverrideProps(overrides, "Rank")}
+          {...getOverrideProps(overrides, "114915")}
         ></Text>
       </Flex>
-      <View
-        width="344px"
-        height="100px"
+      <Flex
+        gap="10px"
         position="absolute"
         top="0px"
         left="277px"
-        overflow="hidden"
-        padding="0px 0px 0px 0px"
+        direction="row"
+        width="344px"
+        alignItems="center"
+        padding="38px 100px 38px 100px"
         backgroundColor="rgba(255,255,255,0)"
-        {...getOverrideProps(overrides, "TeamFrame")}
+        {...getOverrideProps(overrides, "TeamFrame14911")}
       >
         <Text
           fontFamily="Inter"
@@ -93,15 +91,14 @@ export default function DashboardItem(props) {
           display="flex"
           direction="column"
           justifyContent="flex-start"
-          position="absolute"
-          top="38px"
-          left="102px"
+          shrink="0"
+          position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children={teamUpdate?.teamName}
-          {...getOverrideProps(overrides, "Team Name")}
+          {...getOverrideProps(overrides, "Leffler Isle")}
         ></Text>
-      </View>
+      </Flex>
       <View
         width="315px"
         height="100px"
@@ -129,7 +126,7 @@ export default function DashboardItem(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children={teamUpdate?.teamSpeed}
-          {...getOverrideProps(overrides, "Team Speed")}
+          {...getOverrideProps(overrides, "15")}
         ></Text>
       </View>
       <View
@@ -159,7 +156,7 @@ export default function DashboardItem(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children={teamUpdate?.country}
-          {...getOverrideProps(overrides, "Country")}
+          {...getOverrideProps(overrides, "Canada")}
         ></Text>
       </View>
       <View
@@ -171,7 +168,7 @@ export default function DashboardItem(props) {
         overflow="hidden"
         padding="0px 0px 0px 0px"
         backgroundColor="rgba(255,255,255,0)"
-        {...getOverrideProps(overrides, "WeatherFrame")}
+        {...getOverrideProps(overrides, "WeatherFrame14914")}
       >
         <Text
           fontFamily="Inter"
@@ -189,7 +186,7 @@ export default function DashboardItem(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children={teamUpdate?.weatherCondition}
-          {...getOverrideProps(overrides, "Weather")}
+          {...getOverrideProps(overrides, "3")}
         ></Text>
       </View>
       <View
@@ -232,10 +229,67 @@ export default function DashboardItem(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Follow"
-          onClick={() => {
-            followOnClick();
-          }}
           {...getOverrideProps(overrides, "Follow")}
+        ></Text>
+      </View>
+      <View
+        width="248px"
+        height="100px"
+        position="absolute"
+        top="304px"
+        left="1192px"
+        overflow="hidden"
+        padding="0px 0px 0px 0px"
+        backgroundColor="rgba(255,255,255,0)"
+        {...getOverrideProps(overrides, "WeatherFrame22696")}
+      >
+        <Text
+          fontFamily="Inter"
+          fontSize="20px"
+          fontWeight="400"
+          color="rgba(0,0,0,1)"
+          lineHeight="24px"
+          textAlign="left"
+          display="flex"
+          direction="column"
+          justifyContent="flex-start"
+          position="absolute"
+          top="38px"
+          left="100px"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="1"
+          {...getOverrideProps(overrides, "122697")}
+        ></Text>
+      </View>
+      <View
+        width="344px"
+        height="100px"
+        position="absolute"
+        top="804px"
+        left="277px"
+        overflow="hidden"
+        padding="0px 0px 0px 0px"
+        backgroundColor="rgba(255,255,255,0)"
+        {...getOverrideProps(overrides, "TeamFrame226160")}
+      >
+        <Text
+          fontFamily="Inter"
+          fontSize="20px"
+          fontWeight="400"
+          color="rgba(0,0,0,1)"
+          lineHeight="24px"
+          textAlign="left"
+          display="flex"
+          direction="column"
+          justifyContent="flex-start"
+          position="absolute"
+          top="38px"
+          left="102px"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="&#x9;Huel Trail"
+          {...getOverrideProps(overrides, "Huel Trail")}
         ></Text>
       </View>
     </View>

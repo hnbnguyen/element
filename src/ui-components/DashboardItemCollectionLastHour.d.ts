@@ -6,11 +6,14 @@
 
 import React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { TeamUpdate } from "../models";
-import { ViewProps } from "@aws-amplify/ui-react";
-export declare type DashboardHeaderProps = React.PropsWithChildren<Partial<ViewProps> & {
-    teamUpdate?: TeamUpdate;
+import { CollectionProps } from "@aws-amplify/ui-react";
+export declare type DashboardItemCollectionLastHourProps = React.PropsWithChildren<Partial<CollectionProps<any>> & {
+    items?: any[];
+    overrideItems?: ({ item: any, index: number }: {
+        item: any;
+        index: any;
+    }) => Record<string, string>;
 } & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
-export default function DashboardHeader(props: DashboardHeaderProps): React.ReactElement;
+export default function DashboardItemCollectionLastHour(props: DashboardItemCollectionLastHourProps): React.ReactElement;

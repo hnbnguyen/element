@@ -9,9 +9,10 @@ import React from "react";
 import {
   getOverrideProps,
   useAuth,
+  useAuthSignOutAction,
   useNavigateAction,
 } from "@aws-amplify/ui-react/internal";
-import { Flex, Image, Text, View } from "@aws-amplify/ui-react";
+import { Flex, Text, View } from "@aws-amplify/ui-react";
 export default function UserHeader(props) {
   const { userInfo, overrides, ...rest } = props;
   const authAttributes = useAuth().user?.attributes ?? {};
@@ -19,11 +20,13 @@ export default function UserHeader(props) {
     type: "url",
     url: "/",
   });
+  const signoutOnClick = useAuthSignOutAction({ global: false });
   return (
     <Flex
       gap="10px"
       direction="row"
       width="1440px"
+      justifyContent="flex-end"
       alignItems="flex-start"
       position="relative"
       padding="16px 0px 16px 0px"
@@ -34,7 +37,7 @@ export default function UserHeader(props) {
       <Flex
         gap="10px"
         direction="row"
-        width="1166px"
+        width="882px"
         height="72px"
         justifyContent="center"
         alignItems="center"
@@ -43,17 +46,9 @@ export default function UserHeader(props) {
         padding="0px 340px 0px 340px"
         {...getOverrideProps(overrides, "Frame 324")}
       >
-        <Image
-          width="61px"
-          height="55px"
-          shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "image 39")}
-        ></Image>
         <Text
           fontFamily="Inter"
-          fontSize="20px"
+          fontSize="36px"
           fontWeight="400"
           color="rgba(0,0,0,1)"
           lineHeight="24px"
@@ -61,7 +56,7 @@ export default function UserHeader(props) {
           display="flex"
           direction="column"
           justifyContent="flex-start"
-          letterSpacing="0.05px"
+          letterSpacing="0.21px"
           shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
@@ -71,7 +66,7 @@ export default function UserHeader(props) {
         ></Text>
         <Text
           fontFamily="Inter"
-          fontSize="20px"
+          fontSize="36px"
           fontWeight="400"
           color="rgba(0,0,0,1)"
           lineHeight="24px"
@@ -79,7 +74,7 @@ export default function UserHeader(props) {
           display="flex"
           direction="column"
           justifyContent="flex-start"
-          letterSpacing="0.05px"
+          letterSpacing="0.21px"
           shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
@@ -129,6 +124,9 @@ export default function UserHeader(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Sign out"
+          onClick={() => {
+            signoutOnClick();
+          }}
           {...getOverrideProps(overrides, "Sign out")}
         ></Text>
       </View>

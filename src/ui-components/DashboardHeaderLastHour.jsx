@@ -11,12 +11,8 @@ import {
   useNavigateAction,
 } from "@aws-amplify/ui-react/internal";
 import { Flex, Text, View } from "@aws-amplify/ui-react";
-export default function DashboardHeader(props) {
-  const { teamUpdate, overrides, ...rest } = props;
-  const rectangleSevenFourFiveOnClick = useNavigateAction({
-    type: "url",
-    url: "/lasthour",
-  });
+export default function DashboardHeaderLastHour(props) {
+  const { overrides, ...rest } = props;
   const currenthourOnClick = useNavigateAction({ type: "url", url: "/auth" });
   return (
     <View
@@ -27,7 +23,7 @@ export default function DashboardHeader(props) {
       padding="0px 0px 0px 0px"
       backgroundColor="rgba(255,255,255,1)"
       {...rest}
-      {...getOverrideProps(overrides, "DashboardHeader")}
+      {...getOverrideProps(overrides, "DashboardHeaderLastHour")}
     >
       <View
         width="1440px"
@@ -122,7 +118,7 @@ export default function DashboardHeader(props) {
             left="88px"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Team Speed (mph)"
+            children="Team Speed  (mph)"
             {...getOverrideProps(overrides, "Team Speed (mph)")}
           ></Text>
         </View>
@@ -214,9 +210,6 @@ export default function DashboardHeader(props) {
             border="1px SOLID rgba(0,0,0,1)"
             borderRadius="20px"
             padding="0px 0px 0px 0px"
-            onClick={() => {
-              rectangleSevenFourFiveOnClick();
-            }}
             {...getOverrideProps(overrides, "Rectangle 745")}
           ></View>
           <Text
@@ -281,7 +274,7 @@ export default function DashboardHeader(props) {
         width="1440px"
         justifyContent="center"
         alignItems="center"
-        padding="29px 200px 29px 200px"
+        padding="26px 200px 26px 200px"
         {...getOverrideProps(overrides, "Frame 425")}
       >
         <Text
@@ -315,8 +308,8 @@ export default function DashboardHeader(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="@ 11:00fam EST Aug 3rd, 2022"
-          {...getOverrideProps(overrides, "@ 11:00fam EST Aug 3rd, 2022")}
+          children="@ 11:00am EST Aug 3rd, 2022"
+          {...getOverrideProps(overrides, "@ 11:00am EST Aug 3rd, 2022")}
         ></Text>
       </Flex>
     </View>

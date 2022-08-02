@@ -13,7 +13,21 @@
     },
     "categories": {
       "auth": {
-        "element": {}
+        "element": {},
+        "true": {}
+      },
+      "notifications": {
+        "Pinpoint": {
+          "Name": "element-dev",
+          "Id": "6d89283ef3184770b52701eedc78121e",
+          "Region": "us-east-1"
+        }
+      },
+      "function": {
+        "teamUpdate": {
+          "deploymentBucketName": "amplify-element-dev-132212-deployment",
+          "s3Key": "amplify-builds/teamUpdate-7555536d354a61757274-build.zip"
+        }
       }
     }
   }
