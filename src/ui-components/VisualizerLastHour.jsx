@@ -11,10 +11,9 @@ import { Flex, Text, View } from "@aws-amplify/ui-react";
 export default function VisualizerLastHour(props) {
   const { overrides, ...rest } = props;
   return (
-    <View
-      width="1442px"
-      height="192px"
-      overflow="hidden"
+    <Flex
+      gap="0"
+      alignItems="flex-start"
       position="relative"
       padding="0px 0px 0px 0px"
       backgroundColor="rgba(255,255,255,1)"
@@ -23,17 +22,16 @@ export default function VisualizerLastHour(props) {
     >
       <Flex
         gap="0"
-        position="absolute"
-        top="0px"
-        left="0px"
         direction="column"
+        shrink="0"
+        height="190px"
+        position="relative"
         padding="0px 0px 0px 0px"
         backgroundColor="rgba(255,255,255,1)"
         {...getOverrideProps(overrides, "Frame 429")}
       >
         <Flex
           gap="10px"
-          direction="row"
           width="270px"
           justifyContent="flex-end"
           alignItems="center"
@@ -45,7 +43,7 @@ export default function VisualizerLastHour(props) {
           <Text
             fontFamily="Open Sans"
             fontSize="20px"
-            fontWeight="700"
+            fontWeight="400"
             color="rgba(0,0,0,1)"
             lineHeight="24px"
             textAlign="left"
@@ -62,7 +60,6 @@ export default function VisualizerLastHour(props) {
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
           width="270px"
           justifyContent="flex-end"
           alignItems="center"
@@ -74,7 +71,7 @@ export default function VisualizerLastHour(props) {
           <Text
             fontFamily="Open Sans"
             fontSize="20px"
-            fontWeight="700"
+            fontWeight="400"
             color="rgba(0,0,0,1)"
             lineHeight="24px"
             textAlign="left"
@@ -91,7 +88,6 @@ export default function VisualizerLastHour(props) {
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
           width="270px"
           justifyContent="flex-end"
           alignItems="center"
@@ -103,7 +99,7 @@ export default function VisualizerLastHour(props) {
           <Text
             fontFamily="Open Sans"
             fontSize="20px"
-            fontWeight="700"
+            fontWeight="400"
             color="rgba(0,0,0,1)"
             lineHeight="24px"
             textAlign="left"
@@ -120,7 +116,6 @@ export default function VisualizerLastHour(props) {
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
           width="270px"
           justifyContent="flex-end"
           alignItems="center"
@@ -132,7 +127,7 @@ export default function VisualizerLastHour(props) {
           <Text
             fontFamily="Open Sans"
             fontSize="20px"
-            fontWeight="700"
+            fontWeight="400"
             color="rgba(0,0,0,1)"
             lineHeight="24px"
             textAlign="left"
@@ -149,7 +144,6 @@ export default function VisualizerLastHour(props) {
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
           width="270px"
           justifyContent="flex-end"
           alignItems="center"
@@ -161,7 +155,7 @@ export default function VisualizerLastHour(props) {
           <Text
             fontFamily="Open Sans"
             fontSize="20px"
-            fontWeight="700"
+            fontWeight="400"
             color="rgba(0,0,0,1)"
             lineHeight="24px"
             textAlign="left"
@@ -179,174 +173,15 @@ export default function VisualizerLastHour(props) {
       </Flex>
       <Flex
         gap="0"
-        position="absolute"
-        top="0px"
-        left="1335px"
         direction="column"
-        width="107px"
-        justifyContent="center"
-        padding="0px 0px 0px 0px"
-        backgroundColor="rgba(255,255,255,1)"
-        {...getOverrideProps(overrides, "Frame 430")}
-      >
-        <Flex
-          gap="10px"
-          direction="row"
-          width="100px"
-          justifyContent="center"
-          alignItems="center"
-          shrink="0"
-          position="relative"
-          padding="7px 24px 7px 24px"
-          {...getOverrideProps(overrides, "Frame 432240278")}
-        >
-          <Text
-            fontFamily="Open Sans"
-            fontSize="20px"
-            fontWeight="700"
-            color="rgba(174,193,27,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="flex"
-            direction="column"
-            justifyContent="flex-start"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="49%"
-            {...getOverrideProps(overrides, "49%")}
-          ></Text>
-        </Flex>
-        <Flex
-          gap="10px"
-          direction="row"
-          width="100px"
-          justifyContent="center"
-          alignItems="center"
-          shrink="0"
-          position="relative"
-          padding="7px 24px 7px 24px"
-          {...getOverrideProps(overrides, "Frame 431240276")}
-        >
-          <Text
-            fontFamily="Open Sans"
-            fontSize="20px"
-            fontWeight="700"
-            color="rgba(196,18,48,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="flex"
-            direction="column"
-            justifyContent="flex-start"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="47%"
-            {...getOverrideProps(overrides, "47%")}
-          ></Text>
-        </Flex>
-        <Flex
-          gap="10px"
-          direction="row"
-          width="100px"
-          justifyContent="center"
-          alignItems="center"
-          shrink="0"
-          position="relative"
-          padding="7px 24px 7px 24px"
-          {...getOverrideProps(overrides, "Frame 434240282")}
-        >
-          <Text
-            fontFamily="Open Sans"
-            fontSize="20px"
-            fontWeight="700"
-            color="rgba(254,196,47,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="flex"
-            direction="column"
-            justifyContent="flex-start"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="44%"
-            {...getOverrideProps(overrides, "44%")}
-          ></Text>
-        </Flex>
-        <Flex
-          gap="10px"
-          direction="row"
-          width="100px"
-          justifyContent="center"
-          alignItems="center"
-          shrink="0"
-          position="relative"
-          padding="7px 24px 7px 24px"
-          {...getOverrideProps(overrides, "Frame 433240280")}
-        >
-          <Text
-            fontFamily="Open Sans"
-            fontSize="20px"
-            fontWeight="700"
-            color="rgba(147,191,213,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="flex"
-            direction="column"
-            justifyContent="flex-start"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="43%"
-            {...getOverrideProps(overrides, "43%")}
-          ></Text>
-        </Flex>
-        <Flex
-          gap="10px"
-          direction="row"
-          width="100px"
-          justifyContent="center"
-          alignItems="center"
-          shrink="0"
-          position="relative"
-          padding="7px 24px 7px 24px"
-          {...getOverrideProps(overrides, "Frame 435240284")}
-        >
-          <Text
-            fontFamily="Open Sans"
-            fontSize="20px"
-            fontWeight="700"
-            color="rgba(17,61,124,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="flex"
-            direction="column"
-            justifyContent="flex-start"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="40%"
-            {...getOverrideProps(overrides, "40%")}
-          ></Text>
-        </Flex>
-      </Flex>
-      <Flex
-        gap="0"
-        position="absolute"
-        top="0px"
-        left="270px"
-        direction="column"
+        shrink="0"
+        height="200px"
+        position="relative"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Frame 428")}
       >
         <Flex
           gap="10px"
-          direction="row"
           width="1065px"
           justifyContent="center"
           alignItems="center"
@@ -387,7 +222,6 @@ export default function VisualizerLastHour(props) {
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
           width="1065px"
           justifyContent="center"
           alignItems="center"
@@ -428,7 +262,6 @@ export default function VisualizerLastHour(props) {
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
           width="1065px"
           justifyContent="center"
           alignItems="center"
@@ -469,7 +302,6 @@ export default function VisualizerLastHour(props) {
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
           width="1065px"
           justifyContent="center"
           alignItems="center"
@@ -510,7 +342,6 @@ export default function VisualizerLastHour(props) {
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
           width="1065px"
           justifyContent="center"
           alignItems="center"
@@ -550,6 +381,159 @@ export default function VisualizerLastHour(props) {
           </Flex>
         </Flex>
       </Flex>
-    </View>
+      <Flex
+        gap="0"
+        direction="column"
+        width="107px"
+        justifyContent="center"
+        shrink="0"
+        height="190px"
+        position="relative"
+        padding="0px 0px 0px 0px"
+        backgroundColor="rgba(255,255,255,1)"
+        {...getOverrideProps(overrides, "Frame 430")}
+      >
+        <Flex
+          gap="10px"
+          width="100px"
+          justifyContent="center"
+          alignItems="center"
+          shrink="0"
+          position="relative"
+          padding="7px 24px 7px 24px"
+          {...getOverrideProps(overrides, "Frame 432240278")}
+        >
+          <Text
+            fontFamily="Open Sans"
+            fontSize="20px"
+            fontWeight="700"
+            color="rgba(174,193,27,1)"
+            lineHeight="24px"
+            textAlign="left"
+            display="flex"
+            direction="column"
+            justifyContent="flex-start"
+            shrink="0"
+            position="relative"
+            padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
+            children="49%"
+            {...getOverrideProps(overrides, "49%")}
+          ></Text>
+        </Flex>
+        <Flex
+          gap="10px"
+          width="100px"
+          justifyContent="center"
+          alignItems="center"
+          shrink="0"
+          position="relative"
+          padding="7px 24px 7px 24px"
+          {...getOverrideProps(overrides, "Frame 431240276")}
+        >
+          <Text
+            fontFamily="Open Sans"
+            fontSize="20px"
+            fontWeight="700"
+            color="rgba(196,18,48,1)"
+            lineHeight="24px"
+            textAlign="left"
+            display="flex"
+            direction="column"
+            justifyContent="flex-start"
+            shrink="0"
+            position="relative"
+            padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
+            children="47%"
+            {...getOverrideProps(overrides, "47%")}
+          ></Text>
+        </Flex>
+        <Flex
+          gap="10px"
+          width="100px"
+          justifyContent="center"
+          alignItems="center"
+          shrink="0"
+          position="relative"
+          padding="7px 24px 7px 24px"
+          {...getOverrideProps(overrides, "Frame 434240282")}
+        >
+          <Text
+            fontFamily="Open Sans"
+            fontSize="20px"
+            fontWeight="700"
+            color="rgba(254,196,47,1)"
+            lineHeight="24px"
+            textAlign="left"
+            display="flex"
+            direction="column"
+            justifyContent="flex-start"
+            shrink="0"
+            position="relative"
+            padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
+            children="44%"
+            {...getOverrideProps(overrides, "44%")}
+          ></Text>
+        </Flex>
+        <Flex
+          gap="10px"
+          width="100px"
+          justifyContent="center"
+          alignItems="center"
+          shrink="0"
+          position="relative"
+          padding="7px 24px 7px 24px"
+          {...getOverrideProps(overrides, "Frame 433240280")}
+        >
+          <Text
+            fontFamily="Open Sans"
+            fontSize="20px"
+            fontWeight="700"
+            color="rgba(147,191,213,1)"
+            lineHeight="24px"
+            textAlign="left"
+            display="flex"
+            direction="column"
+            justifyContent="flex-start"
+            shrink="0"
+            position="relative"
+            padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
+            children="43%"
+            {...getOverrideProps(overrides, "43%")}
+          ></Text>
+        </Flex>
+        <Flex
+          gap="10px"
+          width="100px"
+          justifyContent="center"
+          alignItems="center"
+          shrink="0"
+          position="relative"
+          padding="7px 24px 7px 24px"
+          {...getOverrideProps(overrides, "Frame 435240284")}
+        >
+          <Text
+            fontFamily="Open Sans"
+            fontSize="20px"
+            fontWeight="700"
+            color="rgba(17,61,124,1)"
+            lineHeight="24px"
+            textAlign="left"
+            display="flex"
+            direction="column"
+            justifyContent="flex-start"
+            shrink="0"
+            position="relative"
+            padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
+            children="40%"
+            {...getOverrideProps(overrides, "40%")}
+          ></Text>
+        </Flex>
+      </Flex>
+    </Flex>
   );
 }

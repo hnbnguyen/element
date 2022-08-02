@@ -6,8 +6,8 @@
 
 import React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { FlexProps } from "@aws-amplify/ui-react";
-export declare type VisualizerLastHourProps = React.PropsWithChildren<Partial<FlexProps> & {
+import { ViewProps } from "@aws-amplify/ui-react";
+export declare type Frame444Props = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
-export default function VisualizerLastHour(props: VisualizerLastHourProps): React.ReactElement;
+export default function Frame444(props: Frame444Props): React.ReactElement;

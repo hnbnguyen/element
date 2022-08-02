@@ -21,7 +21,7 @@ export default function DashboardHeader(props) {
   return (
     <View
       width="1440px"
-      height="242px"
+      height="170px"
       overflow="hidden"
       position="relative"
       padding="0px 0px 0px 0px"
@@ -29,162 +29,6 @@ export default function DashboardHeader(props) {
       {...rest}
       {...getOverrideProps(overrides, "DashboardHeader")}
     >
-      <View
-        width="1440px"
-        height="95px"
-        position="absolute"
-        top="142px"
-        left="0px"
-        overflow="hidden"
-        padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 421")}
-      >
-        <View
-          width="100px"
-          height="100px"
-          position="absolute"
-          top="0px"
-          left="170px"
-          overflow="hidden"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 412")}
-        >
-          <Text
-            fontFamily="Open Sans"
-            fontSize="20px"
-            fontWeight="700"
-            color="rgba(0,0,0,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="flex"
-            direction="column"
-            justifyContent="flex-start"
-            position="absolute"
-            top="38px"
-            left="27px"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Rank"
-            {...getOverrideProps(overrides, "Rank")}
-          ></Text>
-        </View>
-        <View
-          width="342px"
-          height="100px"
-          position="absolute"
-          top="0px"
-          left="270px"
-          overflow="hidden"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 413")}
-        >
-          <Text
-            fontFamily="Open Sans"
-            fontSize="20px"
-            fontWeight="700"
-            color="rgba(0,0,0,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="flex"
-            direction="column"
-            justifyContent="flex-start"
-            position="absolute"
-            top="38px"
-            left="111px"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Team Name"
-            {...getOverrideProps(overrides, "Team Name")}
-          ></Text>
-        </View>
-        <View
-          width="317px"
-          height="100px"
-          position="absolute"
-          top="0px"
-          left="612px"
-          overflow="hidden"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 414")}
-        >
-          <Text
-            fontFamily="Open Sans"
-            fontSize="20px"
-            fontWeight="700"
-            color="rgba(0,0,0,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="flex"
-            direction="column"
-            justifyContent="flex-start"
-            position="absolute"
-            top="38px"
-            left="88px"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Team Speed (mph)"
-            {...getOverrideProps(overrides, "Team Speed (mph)")}
-          ></Text>
-        </View>
-        <View
-          width="263px"
-          height="100px"
-          position="absolute"
-          top="0px"
-          left="929px"
-          overflow="hidden"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 415")}
-        >
-          <Text
-            fontFamily="Open Sans"
-            fontSize="20px"
-            fontWeight="700"
-            color="rgba(0,0,0,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="flex"
-            direction="column"
-            justifyContent="flex-start"
-            position="absolute"
-            top="38px"
-            left="83px"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Country"
-            {...getOverrideProps(overrides, "Country")}
-          ></Text>
-        </View>
-        <View
-          width="248px"
-          height="100px"
-          position="absolute"
-          top="0px"
-          left="1192px"
-          overflow="hidden"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 416")}
-        >
-          <Text
-            fontFamily="Open Sans"
-            fontSize="20px"
-            fontWeight="700"
-            color="rgba(0,0,0,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="flex"
-            direction="column"
-            justifyContent="flex-start"
-            position="absolute"
-            top="38px"
-            left="86px"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Wind (mph)"
-            {...getOverrideProps(overrides, "Wind (mph)")}
-          ></Text>
-        </View>
-      </View>
       <View
         width="1440px"
         height="39px"
@@ -277,7 +121,6 @@ export default function DashboardHeader(props) {
         position="absolute"
         top="0px"
         left="0px"
-        direction="row"
         width="1440px"
         justifyContent="center"
         alignItems="center"
@@ -298,8 +141,8 @@ export default function DashboardHeader(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Leaderboard "
-          {...getOverrideProps(overrides, "Leaderboard")}
+          children="LEADERBOARD"
+          {...getOverrideProps(overrides, "LEADERBOARD")}
         ></Text>
         <Text
           fontFamily="Open Sans"
@@ -315,8 +158,8 @@ export default function DashboardHeader(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="@ 11:00fam EST Aug 3rd, 2022"
-          {...getOverrideProps(overrides, "@ 11:00fam EST Aug 3rd, 2022")}
+          children="@ 11:00am EST Aug 3rd, 2022"
+          {...getOverrideProps(overrides, "@ 11:00am EST Aug 3rd, 2022")}
         ></Text>
       </Flex>
     </View>

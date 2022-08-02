@@ -24,7 +24,6 @@ export default function UserHeader(props) {
   return (
     <Flex
       gap="10px"
-      direction="row"
       width="1440px"
       justifyContent="flex-end"
       alignItems="flex-start"
@@ -36,7 +35,6 @@ export default function UserHeader(props) {
     >
       <Flex
         gap="10px"
-        direction="row"
         width="882px"
         height="72px"
         justifyContent="center"

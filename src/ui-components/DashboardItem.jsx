@@ -74,7 +74,6 @@ export default function DashboardItem(props) {
         position="absolute"
         top="0px"
         left="277px"
-        direction="row"
         width="344px"
         alignItems="center"
         padding="38px 100px 38px 100px"

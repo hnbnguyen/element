@@ -26,7 +26,6 @@ export default function SignupForm(props) {
     >
       <Flex
         gap="10px"
-        direction="row"
         width="fit-content"
         justifyContent="center"
         alignItems="center"

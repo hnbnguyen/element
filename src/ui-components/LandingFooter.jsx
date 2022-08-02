@@ -177,7 +177,6 @@ export default function LandingFooter(props) {
         position="absolute"
         top="262px"
         left="1195px"
-        direction="row"
         height="48px"
         justifyContent="center"
         alignItems="center"

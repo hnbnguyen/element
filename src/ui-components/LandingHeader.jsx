@@ -13,7 +13,6 @@ export default function LandingHeader(props) {
   return (
     <Flex
       gap="50px"
-      direction="row"
       width="1440px"
       justifyContent="center"
       alignItems="center"
@@ -25,7 +24,6 @@ export default function LandingHeader(props) {
     >
       <Flex
         gap="0"
-        direction="row"
         width="1376px"
         justifyContent="space-between"
         alignItems="center"

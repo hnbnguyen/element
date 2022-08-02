@@ -13,7 +13,6 @@ export default function Visualizer(props) {
   return (
     <Flex
       gap="0"
-      direction="row"
       width="1442px"
       alignItems="flex-start"
       position="relative"
@@ -34,7 +33,6 @@ export default function Visualizer(props) {
       >
         <Flex
           gap="10px"
-          direction="row"
           width="270px"
           justifyContent="flex-end"
           alignItems="center"
@@ -46,7 +44,7 @@ export default function Visualizer(props) {
           <Text
             fontFamily="Open Sans"
             fontSize="20px"
-            fontWeight="700"
+            fontWeight="400"
             color="rgba(0,0,0,1)"
             lineHeight="24px"
             textAlign="left"
@@ -63,7 +61,6 @@ export default function Visualizer(props) {
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
           width="270px"
           justifyContent="flex-end"
           alignItems="center"
@@ -75,7 +72,7 @@ export default function Visualizer(props) {
           <Text
             fontFamily="Open Sans"
             fontSize="20px"
-            fontWeight="700"
+            fontWeight="400"
             color="rgba(0,0,0,1)"
             lineHeight="24px"
             textAlign="left"
@@ -92,7 +89,6 @@ export default function Visualizer(props) {
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
           width="270px"
           justifyContent="flex-end"
           alignItems="center"
@@ -104,7 +100,7 @@ export default function Visualizer(props) {
           <Text
             fontFamily="Open Sans"
             fontSize="20px"
-            fontWeight="700"
+            fontWeight="400"
             color="rgba(0,0,0,1)"
             lineHeight="24px"
             textAlign="left"
@@ -121,7 +117,6 @@ export default function Visualizer(props) {
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
           width="270px"
           justifyContent="flex-end"
           alignItems="center"
@@ -133,7 +128,7 @@ export default function Visualizer(props) {
           <Text
             fontFamily="Open Sans"
             fontSize="20px"
-            fontWeight="700"
+            fontWeight="400"
             color="rgba(0,0,0,1)"
             lineHeight="24px"
             textAlign="left"
@@ -150,7 +145,6 @@ export default function Visualizer(props) {
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
           width="270px"
           justifyContent="flex-end"
           alignItems="center"
@@ -162,7 +156,7 @@ export default function Visualizer(props) {
           <Text
             fontFamily="Open Sans"
             fontSize="20px"
-            fontWeight="700"
+            fontWeight="400"
             color="rgba(0,0,0,1)"
             lineHeight="24px"
             textAlign="left"
@@ -189,7 +183,6 @@ export default function Visualizer(props) {
       >
         <Flex
           gap="10px"
-          direction="row"
           width="1065px"
           justifyContent="center"
           alignItems="center"
@@ -230,7 +223,6 @@ export default function Visualizer(props) {
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
           width="1065px"
           justifyContent="center"
           alignItems="center"
@@ -271,7 +263,6 @@ export default function Visualizer(props) {
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
           width="1065px"
           justifyContent="center"
           alignItems="center"
@@ -312,7 +303,6 @@ export default function Visualizer(props) {
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
           width="1065px"
           justifyContent="center"
           alignItems="center"
@@ -353,7 +343,6 @@ export default function Visualizer(props) {
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
           width="1065px"
           justifyContent="center"
           alignItems="center"
@@ -407,7 +396,6 @@ export default function Visualizer(props) {
       >
         <Flex
           gap="10px"
-          direction="row"
           width="100px"
           justifyContent="center"
           alignItems="center"
@@ -436,7 +424,6 @@ export default function Visualizer(props) {
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
           width="100px"
           justifyContent="center"
           alignItems="center"
@@ -465,7 +452,6 @@ export default function Visualizer(props) {
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
           width="100px"
           justifyContent="center"
           alignItems="center"
@@ -494,7 +480,6 @@ export default function Visualizer(props) {
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
           width="100px"
           justifyContent="center"
           alignItems="center"
@@ -523,7 +508,6 @@ export default function Visualizer(props) {
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
           width="100px"
           justifyContent="center"
           alignItems="center"
